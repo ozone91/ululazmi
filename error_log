@@ -1,0 +1,1 @@
+[13-Oct-2014 11:03:09 Asia/Jakarta] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/aswarcom/public_html/ululazmi/application/models/base_model.php on line 265

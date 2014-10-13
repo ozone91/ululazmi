@@ -1,0 +1,23 @@
+<?php
+$lang['alpha'] = "Bagian %s hanya boleh memuat karakter alfabet.";
+$lang['alpha_dash'] = "Bagian %s hanya boleh memuat karakter alfabet-angka, garis bawah dan garis minus.";
+$lang['alpha_numeric'] = "Bagian %s hanya boleh memuat karakter alfabet-angka.";
+$lang['decimal'] = "Bagian %s harus memuat angka desimal.";
+$lang['exact_length'] = "Bagian %s harus mempunyai panjang sama dengan %s karakter.";
+$lang['greater_than'] = "Bagian %s harus memuat angka yang lebih besar dari %s.";
+$lang['integer'] = "Bagian %s hanya boleh memuat integer.";
+$lang['isset'] = "Bagian %s harus memilik isi.";
+$lang['is_natural'] = "Bagian %s harus memuat hanya angka positif.";
+$lang['is_natural_no_zero'] = "Bagian %s harus memuat angka lebih besar dari nol.";
+$lang['is_numeric'] = "Bagian %s hanya boleh memuat karakter angka.";
+$lang['less_than'] = "Bagian %s harus memuat angka yang lebih kecil dari %s.";
+$lang['matches'] = "Bagian %s tidak sesuai dengan bagian %s.";
+$lang['max_length'] = "Bagian %s tidak boleh mempunyai panjang melebihi %s karakter.";
+$lang['min_length'] = "Bagian %s harus mempunyai panjang minimal %s karakter.";
+$lang['numeric'] = "Bagian %s hanya boleh memuat angka.";
+$lang['regex_match'] = "Bagian %s tidak pada format yang benar.";
+$lang['required'] = "Bagian %s di butuhkan.";
+$lang['valid_email'] = "Bagian %s harus memuat alamat email yang valid.";
+$lang['valid_emails'] = "Bagian %s harus memuat alamat-alamat email yang valid.";
+$lang['valid_ip'] = "Bagian %s harus memuat IP yang valid.";
+$lang['valid_url'] = "Bagian %s harus memuat URL yang valid.";
