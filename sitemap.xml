@@ -3,5 +3,102 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 			    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url>
+		<loc>http://localhost/ululazmi/home</loc>
+		<lastmod>2014-10-13T09:34:29+02:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/404</loc>
+		<lastmod>2012-12-21T14:42:05+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/about-ionize-cms</loc>
+		<lastmod>2012-12-06T16:27:42+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/contact</loc>
+		<lastmod>2012-12-21T14:34:59+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/blog</loc>
+		<lastmod>2012-12-21T14:07:43+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/services</loc>
+		<lastmod>2012-12-21T16:53:44+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/footer</loc>
+		<lastmod>2012-11-21T11:52:30+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/my-account</loc>
+		<lastmod>2012-12-22T10:53:57+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/blog/article-1</loc>
+		<lastmod>2014-04-06T09:33:24+02:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/blog/article-2</loc>
+		<lastmod>2012-12-21T15:47:57+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/blog/article-3</loc>
+		<lastmod>2012-12-21T15:52:39+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/blog/article-4</loc>
+		<lastmod>2012-12-21T15:52:46+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/blog/article-5</loc>
+		<lastmod>2012-12-21T15:52:52+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url>
+		<loc>http://localhost/ululazmi/blog/article-6</loc>
+		<lastmod>2012-12-21T15:52:58+01:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
 
 </urlset>

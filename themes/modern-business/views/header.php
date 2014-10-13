@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="<ion:theme_url />css/modern-business.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<ion:theme_url />css/bootstrap-theme.css" >
+    <link rel="stylesheet" type="text/css" href="<ion:theme_url />css/bootstrap-tabs.css" >
 
     <!-- Custom Fonts -->
     <link href="<ion:theme_url />font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -41,9 +41,27 @@
     })
     </script>
 
+
+
 </head>
 
-<body>
+<body onLoad="$('#my-modal').modal('show');">
+
+<div id="my-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Perhatian!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Website Panti Yatim dan Dhuafa Ulul Azmi masih dalam tahap pengembangan, mohon maaf apabila masih ada halaman atau konten yang belum sempurna. Terimakasih.</p>
+                    <p>(Administrator)</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -70,6 +88,13 @@
 								<a href="<ion:url />"><ion:title /></a>
 							</li>
 						</ion:navigation>
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Apa yang anda cari?">
+                        </div>
+                        <button type="submit" class="btn btn-default">Telusuri</button>
+                        </form>
 
 
 						<!--
