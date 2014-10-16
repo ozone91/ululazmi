@@ -45,7 +45,8 @@
 
 </head>
 
-<body onLoad="$('#my-modal').modal('show');">
+<!--<body onLoad="$('#my-modal').modal('show');">-->
+<body>
 
 <div id="my-modal" class="modal fade">
         <div class="modal-dialog">

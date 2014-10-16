@@ -1,12 +1,12 @@
 <ion:partial view="header" />
 
 <!-- Header Carousel -->
+    <center>
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -15,7 +15,7 @@
                 <div class="fill">
                 <ion:medias type="picture" size="1000" limit="1">
                 <center>
-                <img src="<ion:media:base_path />slider/1.jpg" alt="<ion:media:alt />" />
+                <img src="<ion:media:base_path />slider/gbanner6.jpg" alt="<ion:media:alt />" />
                 </center>
                 </ion:medias>
                 </div>
@@ -29,7 +29,6 @@
 				 *
 				 */
 				?>
-				<ion:page:title tag="h1"/>
                 <?php
 				/*
 				 * Page's subtitle
@@ -39,31 +38,15 @@
 				 *
 				 */
 				?>
-                <ion:page:subtitle tag="h2" function="nl2br" />
                 </div>
             </div>
             <div class="item">
                 <div class="fill">
                 <ion:medias type="picture" limit="1">
                 <center>
-                <img src="<ion:media:base_path />slider/2.jpg"  alt="<ion:media:alt />" />
+                <img src="<ion:media:base_path />slider/gbanner8.jpg"  alt="<ion:media:alt />" />
                 </center>
                 </ion:medias>
-                </div>
-                <div class="carousel-caption">
-                    <h2>Caption 2</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill">
-                <ion:medias type="picture" limit="1">
-                <center>
-                <img src="<ion:media:base_path />slider/3.jpg" alt="<ion:media:alt />" />
-                </center>
-                </ion:medias>
-                </div>
-                <div class="carousel-caption">
-                    <h2>Caption 3</h2>
                 </div>
             </div>
         </div>
@@ -76,6 +59,7 @@
             <span class="icon-next"></span>
         </a>
     </header>
+    </center>
 
     <!-- Page Content -->
     <div class="container">
@@ -209,11 +193,80 @@
 		 <div class="tab-content">
 
 			<div id="tab5" class="tab-pane active">
-				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+            <ion:page:articles pagination="5">
+            <div class="list-group" style="margin-bottom: 0px;">
+                <a title="<ion:article:title />" href="<ion:article:url />" class="list-group-item">
+                        <ion:medias type="picture,video" limit="1">
+			                 <ion:media:type is="picture">
+			                     <img class="media-object" src="<ion:media:src size='300,200' method='adaptive' />" />
+			                 </ion:media:type>
+                        </ion:medias>
+                        <h4 class="list-group-item-heading"><ion:article:title /></h4>
+                        <p class="list-group-item-text">
+                        <ion:article:content paragraph="1" /> 
+                        </p>
+                </a>
+            </div>
+            </ion:page:articles>
+            <ion:page:articles:pagination pagination="5" />
 			</div>
 
 			<div id="tab6" class="tab-pane">
-				 <p>This is the second tab.</p>
+                <ion:page id="blog">
+					<ion:articles>
+						<ion:article>
+                        
+                        <?php
+									/*
+									 * Static Item : Flag
+									 * If one Static item called "flag" is linked to the article,
+									 * the content of the field called "text" will be displayed.
+									 *
+									 * As we limit to 1, only the first flag will be used.
+									 *
+									 */
+									?>
+									<ion:article:static:flag:items limit="1">
+										<div class="flag"><span><ion:text:value /></span></div>
+									</ion:article:static:flag:items>
+
+									<a href="<ion:url />"><h3><ion:title /></h3></a>
+                                    <div class="hide-for-small medium-4 large-4 columns">
+
+										<ion:medias type="picture,video" limit="1">
+
+											<ion:media:type is="video">
+												<div class="media">
+													<ion:media:provider  is='youtube'><iframe class="video" width="100%" height="200" src="<ion:media:src />" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></ion:media:provider>
+													<ion:media:provider  is='vimeo'><iframe class="video" width="100%" height="200" src="<ion:media:src />" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></ion:media:provider>
+													<ion:media:provider  is='dailymotion'><iframe class="video" width="100%" height="200" src="<ion:media:src />" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></ion:media:provider>
+													<ion:media:extension is="mp4"><video class="video" width="100%" height="200"controls><source src="<ion:media:src />" type="video/mp4" ></video></ion:media:extension>
+													<ion:media:extension is="ogv"><video class="video" width="100%" height="200" controls><source src="<ion:media:src />" type="video/ogg" ></video></ion:media:extension>
+												</div>
+											</ion:media:type>
+
+											<ion:media:type is="picture">
+												<img src="<ion:media:src size='300,200' method='adaptive' />" />
+											</ion:media:type>
+
+										</ion:medias>
+
+
+									</div>
+
+									<div class="medium-8 large-8 columns">
+										<?php
+										/*
+										 * Content, limited to the first paragraph
+										 */
+										?>
+										<ion:content paragraph="1" />
+
+									</div>
+
+						</ion:article>
+					</ion:articles>
+				</ion:page>
 			</div>
 
 			<div id="tab7" class="tab-pane">

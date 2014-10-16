@@ -4,7 +4,7 @@ Source Host: localhost
 Source Database: ululazmi_db
 Target Host: localhost
 Target Database: ululazmi_db
-Date: 13-Oct-14 10:25:37 PM
+Date: 14-Oct-14 2:58:02 AM
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -210,7 +210,7 @@ CREATE TABLE `element_definition` (
   `description` text,
   `ordering` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_element_definition`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for element_definition_lang
@@ -743,7 +743,7 @@ CREATE TABLE `url` (
   KEY `idx_url_type` (`type`),
   KEY `idx_url_active` (`active`),
   KEY `idx_url_lang` (`lang`)
-) ENGINE=MyISAM AUTO_INCREMENT=658 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=692 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for user
@@ -892,7 +892,7 @@ INSERT INTO `media_lang` VALUES ('en', '6', 'Monywa, Burma', 'In the mountain of
 INSERT INTO `media_lang` VALUES ('en', '7', 'Monywa wall paints', 'These 17th centruey wall painting are very well preserved because the caves were forgivven for centuries.', 'These 17th centruey wall painting are very well preserved because the caves were forgivven for centuries.');
 INSERT INTO `menu` VALUES ('1', 'main', 'Main menu', null);
 INSERT INTO `menu` VALUES ('2', 'system', 'System menu', null);
-INSERT INTO `notification` VALUES ('1', '2014-10-13', 'sitemap_refresh', 'System', 'Sitemap refresh', 'Sitemap needs to be refreshed.<br/> Go to <b>Tools > System Diagnosis > Tools</b> and click on <b>\"Refresh Sitemap\"</b>.', '0');
+INSERT INTO `notification` VALUES ('1', '2014-10-13', 'sitemap_refresh', 'System', 'Sitemap refresh', 'Sitemap needs to be refreshed.<br/> Go to <b>Tools > System Diagnosis > Tools</b> and click on <b>\"Refresh Sitemap\"</b>.', '1');
 INSERT INTO `page` VALUES ('1', '0', '2', '0', '0', '404', '0', '0', '1', '0', 'demo', 'demo', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '2012-12-21 14:42:05', '0000-00-00 00:00:00', '0', '1', '', '', '', '', 'ordering', 'ASC', '', null, '', '0', '5', '0', null);
 INSERT INTO `page` VALUES ('2', '0', '1', '0', '0', 'welcome', '1', '0', '1', '1', 'demo', 'admin', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '2014-10-13 09:34:29', '0000-00-00 00:00:00', '1', '1', 'page_home', '', '', '', 'ordering', 'ASC', '', null, '', '0', '5', '0', '404');
 INSERT INTO `page` VALUES ('3', '0', '1', '0', '0', 'about-ionize-cms', '5', '0', '1', '0', 'demo', 'demo', '2012-11-17 09:42:18', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '2012-12-06 16:27:42', '0000-00-00 00:00:00', '1', '1', 'pages/page_standard', 'pages/page_standard', null, '', 'ordering', 'ASC', '', null, '', '0', '5', '0', null);
@@ -1146,36 +1146,38 @@ INSERT INTO `tag` VALUES ('1', 'Content Management');
 INSERT INTO `tag` VALUES ('2', 'development');
 INSERT INTO `tag` VALUES ('3', 'company');
 INSERT INTO `tag` VALUES ('4', 'services');
-INSERT INTO `url` VALUES ('653', '2', 'page', '1', '1', 'en', 'home', '2', '2', '2014-10-13 09:34:29');
-INSERT INTO `url` VALUES ('601', '1', 'page', '1', '1', 'en', '404', '1', '1', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('602', '1', 'article', '1', '1', 'en', '404/404', '1/1', '1/1', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('654', '11', 'article', '1', '1', 'en', 'home/easy-edition', '2/11', '2/11', '2014-10-13 09:34:29');
-INSERT INTO `url` VALUES ('655', '12', 'article', '1', '1', 'en', 'home/multilingual', '2/12', '2/12', '2014-10-13 09:34:29');
-INSERT INTO `url` VALUES ('656', '13', 'article', '1', '1', 'en', 'home/userfriendly', '2/13', '2/13', '2014-10-13 09:34:29');
-INSERT INTO `url` VALUES ('657', '14', 'article', '1', '1', 'en', 'home/template-system', '2/14', '2/14', '2014-10-13 09:34:29');
-INSERT INTO `url` VALUES ('608', '3', 'page', '1', '1', 'en', 'about-ionize-cms', '3', '3', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('609', '15', 'article', '1', '1', 'en', 'about-ionize-cms/about-us-1', '3/15', '3/15', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('610', '4', 'page', '1', '1', 'en', 'contact', '4', '4', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('611', '24', 'article', '1', '1', 'en', 'contact/contact-informations', '4/24', '4/24', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('612', '26', 'article', '1', '1', 'en', 'contact/our-location', '4/26', '4/26', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('613', '29', 'article', '1', '1', 'en', 'contact/send-us-a-message', '4/29', '4/29', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('614', '6', 'page', '1', '1', 'en', 'blog', '6', '6', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('615', '5', 'article', '1', '1', 'en', 'blog/article-1', '6/5', '6/5', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('616', '6', 'article', '1', '1', 'en', 'blog/article-2', '6/6', '6/6', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('617', '7', 'article', '1', '1', 'en', 'blog/article-3', '6/7', '6/7', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('618', '8', 'article', '1', '1', 'en', 'blog/article-4', '6/8', '6/8', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('619', '9', 'article', '1', '1', 'en', 'blog/article-5', '6/9', '6/9', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('620', '10', 'article', '1', '1', 'en', 'blog/article-6', '6/10', '6/10', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('621', '8', 'page', '1', '1', 'en', 'services', '8', '8', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('622', '17', 'article', '1', '1', 'en', 'services/some-of-our-services', '8/17', '8/17', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('623', '18', 'article', '1', '1', 'en', 'services/service-1', '8/18', '8/18', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('624', '19', 'article', '1', '1', 'en', 'services/service-2', '8/19', '8/19', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('625', '20', 'article', '1', '1', 'en', 'services/service-3', '8/20', '8/20', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('626', '9', 'page', '1', '1', 'en', 'footer', '9', '9', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('627', '16', 'article', '1', '1', 'en', 'footer/footer-resources', '9/16', '9/16', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('628', '27', 'article', '1', '1', 'en', 'footer/whats-ionize', '9/27', '9/27', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('629', '28', 'article', '1', '1', 'en', 'footer/can-i-help', '9/28', '9/28', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('630', '10', 'page', '1', '1', 'en', 'my-account', '10', '10', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('631', '30', 'article', '1', '1', 'en', 'my-account/not-logged-in', '10/30', '10/30', '2012-12-28 19:56:07');
-INSERT INTO `url` VALUES ('632', '31', 'article', '1', '1', 'en', 'my-account/hello', '10/31', '10/31', '2012-12-28 19:56:07');
-INSERT INTO `user` VALUES ('1', '1', '2014-10-11 17:08:33', '2014-10-13 15:09:28', 'admin', 'Ulul Azmi', 'Ulul', 'Azmi', null, null, 'Q4dyLI0MaSXkSS6TBQ==', 'admin@localhost.com', 'c20f9184ef9f7c79');
+INSERT INTO `url` VALUES ('660', '2', 'page', '1', '1', 'en', 'home', '2', '2', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('658', '1', 'page', '1', '1', 'en', '404', '1', '1', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('659', '1', 'article', '1', '1', 'en', '404/404', '1/1', '1/1', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('661', '11', 'article', '1', '1', 'en', 'home/easy-edition', '2/11', '2/11', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('662', '12', 'article', '1', '1', 'en', 'home/multilingual', '2/12', '2/12', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('663', '13', 'article', '1', '1', 'en', 'home/userfriendly', '2/13', '2/13', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('664', '14', 'article', '1', '1', 'en', 'home/template-system', '2/14', '2/14', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('665', '3', 'page', '1', '1', 'en', 'about-ionize-cms', '3', '3', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('666', '15', 'article', '1', '1', 'en', 'about-ionize-cms/about-us-1', '3/15', '3/15', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('667', '4', 'page', '1', '1', 'en', 'contact', '4', '4', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('668', '24', 'article', '1', '1', 'en', 'contact/contact-informations', '4/24', '4/24', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('669', '26', 'article', '1', '1', 'en', 'contact/our-location', '4/26', '4/26', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('670', '29', 'article', '1', '1', 'en', 'contact/send-us-a-message', '4/29', '4/29', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('671', '6', 'page', '1', '1', 'en', 'blog', '6', '6', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('672', '5', 'article', '1', '1', 'en', 'blog/article-1', '6/5', '6/5', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('673', '6', 'article', '1', '1', 'en', 'blog/article-2', '6/6', '6/6', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('674', '7', 'article', '1', '1', 'en', 'blog/article-3', '6/7', '6/7', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('675', '8', 'article', '1', '1', 'en', 'blog/article-4', '6/8', '6/8', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('676', '9', 'article', '1', '1', 'en', 'blog/article-5', '6/9', '6/9', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('677', '10', 'article', '1', '1', 'en', 'blog/article-6', '6/10', '6/10', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('678', '8', 'page', '1', '1', 'en', 'services', '8', '8', '2014-10-13 19:02:03');
+INSERT INTO `url` VALUES ('679', '17', 'article', '1', '1', 'en', 'services/some-of-our-services', '8/17', '8/17', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('680', '18', 'article', '1', '1', 'en', 'services/service-1', '8/18', '8/18', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('681', '19', 'article', '1', '1', 'en', 'services/service-2', '8/19', '8/19', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('682', '20', 'article', '1', '1', 'en', 'services/service-3', '8/20', '8/20', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('683', '9', 'page', '1', '1', 'en', 'footer', '9', '9', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('684', '16', 'article', '1', '1', 'en', 'footer/footer-resources', '9/16', '9/16', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('685', '27', 'article', '1', '1', 'en', 'footer/whats-ionize', '9/27', '9/27', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('686', '28', 'article', '1', '1', 'en', 'footer/can-i-help', '9/28', '9/28', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('687', '10', 'page', '1', '1', 'en', 'my-account', '10', '10', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('688', '30', 'article', '1', '1', 'en', 'my-account/not-logged-in', '10/30', '10/30', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('689', '31', 'article', '1', '1', 'en', 'my-account/hello', '10/31', '10/31', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('690', '11', 'page', '1', '1', 'en', '401', '11', '11', '2014-10-13 19:02:04');
+INSERT INTO `url` VALUES ('691', '12', 'page', '1', '1', 'en', '403', '12', '12', '2014-10-13 19:02:04');
+INSERT INTO `user` VALUES ('1', '1', '2014-10-11 17:08:33', '2014-10-13 19:01:26', 'admin', 'Ulul Azmi', 'Ulul', 'Azmi', null, null, 'Q4dyLI0MaSXkSS6TBQ==', 'admin@localhost.com', 'c20f9184ef9f7c79');
