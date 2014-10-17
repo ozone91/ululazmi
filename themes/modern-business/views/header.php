@@ -89,12 +89,11 @@
 								<a href="<ion:url />"><ion:title /></a>
 							</li>
 						</ion:navigation>
-                        
-                        <form class="navbar-form navbar-left" role="search">
+                        <form class="navbar-form navbar-left" role="search" action="<ion:base_url />/search">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Apa yang anda cari?">
+                            <input type="text" name="realm" id="search-input" class="form-control" placeholder="Apa yang anda cari?">
                         </div>
-                        <button type="submit" class="btn btn-default">Telusuri</button>
+                        <button type="submit" name="sa"class="btn btn-default">Telusuri</button>
                         </form>
 
 
